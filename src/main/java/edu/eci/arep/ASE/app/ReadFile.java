@@ -15,7 +15,7 @@ public class ReadFile {
         String outputLine;
 
         out.println("HTTP/1.1 200 OK\r\n");
-        out.println("Content-Type: text/html\r\n");
+        //out.println("Content-Type: text/html\r\n");
         out.println("\r\n");
 
         File file = new File("src/main/resources/index.html");

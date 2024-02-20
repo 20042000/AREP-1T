@@ -54,7 +54,7 @@ public class HttpServer {
             String path = firstLine.split(" ")[1];
 
             if(path.startsWith("/calculadora")){
-                readFile.leerArchivo(clientSocket, httpConnection, path.split("/")[2]);
+                readFile.leerArchivo(clientSocket, httpConnection, path.split("/")[1]);
             }else if(path.startsWith("/")){
                 readFile.leerArchivo(clientSocket, httpConnection, path);
             }
